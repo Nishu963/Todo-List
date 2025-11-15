@@ -7,7 +7,7 @@ import LoginScreen from "./components/LoginScreen";
 import SignupScreen from "./components/SignupScreen";
 import HomeScreen from "./components/HomeScreen";
 import AddTaskScreen from "./components/AddTaskScreen";
-import EditTaskScreen from "./components/EditTaskScreen"; // ✅ 
+import EditTaskScreen from "./components/EditTaskScreen"; 
 
 const Stack = createStackNavigator();
 
