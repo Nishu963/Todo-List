@@ -16,7 +16,7 @@ export default function AddTaskScreen({ navigation }) {
       await db.collection("tasks").add({
         title: task,
         user: auth.currentUser.email,
-        completed: false, // ✅ default to incomplete
+        completed: false, 
         createdAt: new Date(),
       });
       console.log("✅ Task added:", task);
@@ -58,4 +58,5 @@ const styles = StyleSheet.create({
   },
   error: { color: "red", marginTop: 10, textAlign: "center" },
 });
+
 
