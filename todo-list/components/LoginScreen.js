@@ -11,7 +11,7 @@ export default function LoginScreen({ navigation }) {
     try {
       const userCredential = await auth.signInWithEmailAndPassword(email, password);
       console.log("✅ Login successful:", userCredential.user.email);
-      navigation.replace("Home"); // Use replace to prevent back navigation
+      navigation.replace("Home"); 
     } catch (err) {
       console.error("❌ Login failed:", err.message);
       setError(err.message);
@@ -49,3 +49,4 @@ export default function LoginScreen({ navigation }) {
     </View>
   );
 }
+
