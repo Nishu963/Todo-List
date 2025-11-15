@@ -11,7 +11,7 @@ export default function SignupScreen({ navigation }) {
     try {
       const userCredential = await auth.createUserWithEmailAndPassword(email, password);
       console.log("✅ Signup successful:", userCredential.user.email);
-      navigation.replace("Home"); // Use replace to prevent back navigation
+      navigation.replace("Home"); 
     } catch (err) {
       console.error("❌ Signup failed:", err.message);
       setError(err.message);
@@ -49,4 +49,5 @@ export default function SignupScreen({ navigation }) {
     </View>
   );
 }
+
 
